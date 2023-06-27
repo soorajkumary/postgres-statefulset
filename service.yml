@@ -4,6 +4,7 @@ metadata:
   labels:
     app: postgres
   name: postgres
+  namespace: dbcluster
 spec:
   type: ClusterIP
   ports:
@@ -22,7 +23,7 @@ metadata:
   labels:
     app: postgres-replica
   name: postgres-replica
-
+  namespace: dbcluster
 spec:
   type: ClusterIP
   ports:
